@@ -1,3 +1,31 @@
-body {
-    background:tomato;
+// COLOR PALETTE --------------------------------------
+$theme-color: #f6a823;
+// rgb(246, 168, 35);
+$accent-primary-color: #05afc1;
+// rgb(5, 175, 193);
+$accent-secondary-color: #a82706;
+// rgb(168, 39, 6);
+$bckg-shade: #F0EFED;
+// rgb(240, 239, 237)
+$accent-text-color: #285e64;
+// rgb (40, 94, 100);
+$text-color: #2c2c2c;
+// rgb (44, 44, 44);
+$form-text-color: #4f4f4f;
+// rgb(79, 79, 79);
+
+// TYPOGRAPHY STYLES ----------------------------------
+
+// font-family: 'Lora', serif;
+// font-family: 'Roboto', sans-serif;
+
+// logo-fonts 80px | logo-nav-font (?)
+@mixin logo-font-main($size){
+    font-family: 'Lora', serif;
+    color: $text-color;
+    font-size: ($size);
+    text-transform: uppercase;
 }
+
+
+
