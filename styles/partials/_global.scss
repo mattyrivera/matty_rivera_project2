@@ -1,7 +1,11 @@
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     background: pink;
 }
 
-h1 {
-    @include logo-font-main(40px);
-}
+
+

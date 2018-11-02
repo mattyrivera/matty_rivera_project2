@@ -132,11 +132,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   background: pink; }
-
-h1 {
-  font-family: 'Lora', serif;
-  color: #2c2c2c;
-  font-size: 40px;
-  text-transform: uppercase; }
