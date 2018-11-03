@@ -135,6 +135,90 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 62.5%; }
 
+body {
+  background: #f6a823; }
+
 .wrapper {
-  max-width: 1080px;
-  width: 80%; }
+  max-width: 1024px;
+  width: 80%;
+  border: 2px solid tomato;
+  margin: 0 auto; }
+
+ul {
+  padding: 0;
+  margin: 15px 0; }
+
+.nav__item {
+  list-style: none; }
+  .nav__item__link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 29px;
+    color: #2c2c2c;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    margin: 0 10px; }
+    .nav__item__link--logo {
+      font-family: 'Lora', serif;
+      color: #2c2c2c;
+      font-size: 3rem;
+      text-transform: uppercase; }
+
+.nav__item__link:hover {
+  color: #F0EFED; }
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 50px; }
+
+.container__heading {
+  position: relative;
+  margin: 0 0 95px 35px; }
+
+.header__title--logo {
+  font-family: 'Lora', serif;
+  color: #2c2c2c;
+  font-size: 11.5rem;
+  text-transform: uppercase;
+  margin: 0; }
+
+.header__title--image {
+  width: 100%;
+  max-width: 150px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  bottom: 0;
+  left: -45px; }
+
+.header__image {
+  margin-left: 110px; }
+
+.header__image--author {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  -webkit-box-shadow: 15px 15px 0px 1px white;
+  box-shadow: 15px 15px 0px 1px white; }
