@@ -29,8 +29,9 @@ $form-text-color: #4f4f4f;
 }
 
 // sizes: 4.2rem, 3.2rem, 2.4rem
-@mixin article-heading-font($size){
+@mixin heading-font($size){
     font-family: 'Roboto', sans-serif;
+    font-size: ($size);
     font-weight: 700;
     letter-spacing: 1px;
     color: $text-color;

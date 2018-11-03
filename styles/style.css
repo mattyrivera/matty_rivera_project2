@@ -148,6 +148,17 @@ ul {
   padding: 0;
   margin: 15px 0; }
 
+.section__heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2c2c2c;
+  text-transform: uppercase; }
+
+.header {
+  height: 90vh; }
+
 .nav__item {
   list-style: none; }
   .nav__item__link {
@@ -215,10 +226,20 @@ ul {
 
 .header__image {
   margin-left: 110px; }
+  .header__image--author {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    -webkit-box-shadow: 15px 15px 0px 1px white;
+    box-shadow: 15px 15px 0px 1px white; }
 
-.header__image--author {
-  width: 100%;
-  max-width: 420px;
-  display: block;
-  -webkit-box-shadow: 15px 15px 0px 1px white;
-  box-shadow: 15px 15px 0px 1px white; }
+.section--about {
+  background: #F0EFED; }
+
+.section__heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2c2c2c;
+  text-transform: uppercase; }

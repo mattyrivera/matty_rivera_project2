@@ -1,5 +1,9 @@
 // HEADER STYLING --- index
 
+.header {
+    height: 90vh;
+}
+
 .nav__item {
     list-style: none;
     &__link {
@@ -54,13 +58,13 @@
 
 .header__image {
     margin-left: 110px;
+    &--author {
+        // position: relative;
+        // bottom: -50px;
+        width: 100%;
+        max-width: 420px;
+        display: block;
+        box-shadow: 15px 15px 0px 1px rgba(255,255,255,1);
+    }
 }
 
-.header__image--author {
-    width: 100%;
-    max-width: 420px;
-    display: block;
-    box-shadow: 15px 15px 0px 1px rgba(255,255,255,1);
-
-
-}
