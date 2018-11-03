@@ -135,5 +135,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 62.5%; }
 
-body {
-  background: pink; }
+.wrapper {
+  max-width: 1080px;
+  width: 80%; }
