@@ -77,6 +77,14 @@ $form-text-color: #4f4f4f;
     color: $accent-text-color;
 }
 
+@mixin copyright {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0;
+    color: $bckg-shade;
+}
+
 
 
 

@@ -1,0 +1,10 @@
+.container__footer {
+    background: $text-color;
+    &--text {
+        display: flex;
+        justify-content: center;
+        @include copyright;
+        padding: 10px 0;
+    }
+}
+
