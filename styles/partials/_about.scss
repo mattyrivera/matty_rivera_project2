@@ -1,7 +1,8 @@
-.section--about {
+.section__content--about {
     background: $bckg-shade;
 }
 
-.section__heading {
-    @include heading-font(4.2rem);
+.paragraph--about {
+    padding-right: 130px;
 }
+

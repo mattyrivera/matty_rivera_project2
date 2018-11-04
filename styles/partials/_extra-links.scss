@@ -1,0 +1,19 @@
+.section__content--extra-links {
+    background: $bckg-shade;
+}
+
+.extra-links {
+    display: flex;
+    width: 50%;
+}
+
+
+.button__icons--round {
+    color: $text-color;
+    font-size: 2rem;
+    background: $theme-color;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
