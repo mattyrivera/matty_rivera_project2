@@ -1,0 +1,15 @@
+.container__journey {
+    display: flex;
+    &--image {
+        margin-right: 50px;
+    }
+    &--description {
+        margin-left: 25px;
+    }
+}
+
+.journey__image{
+    max-width: 280px;
+    display: block;
+    box-shadow: 15px 15px 0px 0px rgba(246, 168, 35, 1);
+}

@@ -102,15 +102,18 @@
 }
 
 .blog__container--description {
-    padding-right: 50px;
+    padding-right: 101px;
     padding-bottom: 40px;
+    padding-top: 10px;
 }
 
 .blog__container--description.blog--top {
-    padding-top: 40px;
-    padding-left: 50px;
+    padding-top: 60px;
+    padding-left: 101px;
     padding-right: 10%;
-
+}
+.blog--bottom {
+    text-align: right;
 }
 
 .paragraph--blog {

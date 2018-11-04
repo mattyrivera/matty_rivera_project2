@@ -48,12 +48,13 @@ $form-text-color: #4f4f4f;
     text-transform: uppercase;
 }
 
+// font-size: 2rem | line-height: 32px
 @mixin btn-links-font {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
-    line-height: 32px;
+    line-height: 16px;
     color: $text-color;
     text-transform: uppercase;
 }
@@ -61,7 +62,8 @@ $form-text-color: #4f4f4f;
 // line-height (32px)
 @mixin body-font {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    // font-size: 2rem;
     line-height: 30px;
     font-weight: 400;
     color: $text-color;

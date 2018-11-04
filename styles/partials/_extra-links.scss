@@ -1,19 +1,43 @@
-.section__content--extra-links {
+.section__extra-links {
     background: $bckg-shade;
+    padding: 100px 0 55px 0;
 }
 
-.extra-links {
+.section__container--extra-links {
     display: flex;
-    width: 50%;
+    flex-wrap: wrap;
+    .container__extra-links {
+        display:flex;
+        width: calc(50% - 10px);
+        margin-bottom: 30px;
+        &--description {
+            margin-top:11px;
+        }
+    }
 }
 
+.container__extra-links:nth-child(odd){
+    margin-right: 20px;
+
+}
 
 .button__icons--round {
     color: $text-color;
     font-size: 2rem;
     background: $theme-color;
     padding: 15px 15px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button__sub-heading {
+    text-decoration: none;
+    color: $text-color;
+    padding-left: 15px;
+}
+
+.paragraph--extra-links {
+    margin: 15px;
 }

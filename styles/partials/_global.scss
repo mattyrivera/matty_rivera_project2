@@ -17,12 +17,12 @@ html {
 
 // MAIN HEADING STYLING
 .section__heading {
-    @include heading-font(4.2rem);
+    @include heading-font(3.4rem);
     margin: 0;
 }
 
 .section__heading--sub-heading {
-    @include heading-font(3.2rem);
+    @include heading-font(2.5rem);
     margin: 0;
 }
 
@@ -34,7 +34,7 @@ html {
 .button {
     @include btn-links-font;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 15px 20px;
     background: $accent-primary-color;
     display: inline-block;
 }
