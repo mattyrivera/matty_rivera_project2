@@ -1,43 +1,45 @@
 // HEADER STYLING --- index
 
-.header {
-    height: 90vh;
+.header--home {
+    height: 80vh;
     max-height: 600px;
     background: $theme-color;
 }
 
-.nav__item {
-    list-style: none;
-    &__link {
-        text-decoration: none;
-        @include nav-font;
-        padding: 10px 10px;
-        margin: 0 10px;
-        // border: 2px solid tomato;
-        &--logo {
-            @include logo-font(3rem);
-        }
-    }
-}
+// .nav__item {
+//     list-style: none;
+//     &__link {
+//         text-decoration: none;
+//         @include nav-font;
+//         padding: 10px 10px;
+//         margin: 0 10px;
+//         // border: 2px solid tomato;
+//         &--logo {
+//             @include logo-font(3rem);
+//         }
+//     }
+// }
 
-.nav__item__link:hover {
-    color: $bckg-shade;
-}
+// .nav__item__link:hover {
+//     color: $bckg-shade;
+// }
 
-.nav__links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 15px 0;
-}
+// .nav__links {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 0;
+//     padding: 15px 0;
+// }
+
 
 .header__content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-basis: 1;
-    margin-top: 30px;
+    padding-top:30px;
+    // margin-top: 30px;
 }
 
 .container__heading {
@@ -72,3 +74,43 @@
     }
 }
 
+// CONTACT PAGE STYLING--------------------------------------
+
+.title--contact {
+    @include logo-font(6.3rem);
+    margin: 0;
+    position: relative;
+    top: 35px;
+}
+
+.contact--image {
+    background: url(../assets/contact-image-1.jpg);
+	min-height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+// CONTACT PAGE STYLING--------------------------------------
+
+.title--blog {
+    @include logo-font(6.3rem);
+    margin: 0;
+    position: relative;
+    top: 35px;
+}
+
+.blog--image {
+    background: url(../assets/blog-image-1.jpg);
+	min-height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

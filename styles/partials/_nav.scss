@@ -1,0 +1,29 @@
+.nav {
+    background: $theme-color;
+}
+
+.nav__item {
+    list-style: none;
+    &__link {
+        text-decoration: none;
+        @include nav-font;
+        padding: 10px 10px;
+        margin: 0 10px;
+        // border: 2px solid tomato;
+        &--logo {
+            @include logo-font(3rem);
+        }
+    }
+}
+
+.nav__item__link:hover {
+    color: $bckg-shade;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 15px 0;
+}
