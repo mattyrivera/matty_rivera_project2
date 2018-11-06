@@ -47,40 +47,46 @@
     <!-- MAIN--- -->
     <main class="contact__main">
         <div class="wrapper">
-            <section class="contact">
-                        <div class="contact__form">
-                            <form action="Contact Form" method="post" name="Order Form" class="contact-form">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" placeholder="Name" required>
+            <div class="contact__container">
+                <section class="contact">
+                    <div class="contact__form">
+                        <form action="Contact Form" method="post" name="Order Form" class="contact-form">
+                            <div class="contact__form--name-email">
+                                <label for="name" class="hidden__label">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Name" required class="input__fill fill--name">
 
-                                <label for="email">Email:</label>
-                                <input type="email" name="email" id="email" placeholder="Emale Address" required>
+                                <label for="email" class="hidden__label">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="Email Address" required class="input__fill fill--email">
+                            </div>
 
-                                <label for="message">Write your message:</label>
-                                <textarea name="message" id="message" cols="25" rows="5"></textarea>
-                                <input type="submit" value="Submit">
+                            <label for="message" class="hidden__label">Write your message:</label>
+                            <textarea name="message" id="message" placeholder="Message" cols="25" rows="15" class="text-area"></textarea>
+                            <input type="submit" value="Submit" class="btn__form">
 
-                            </form>
-                        </div>
-            </section>
-            <aside class="aside">
+                        </form>
+                    </div>
+                </section>
+                <aside class="aside">
                     <div class="container__aside">
-                        <div class="nav__social">
-                            <ul class="aside__links">
-                                <li class="aside__item--social"><a href="https://www.facebook.com/" class="aside__item__link--social"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="aside__item--social"><a href="https://twitter.com/" class="aside__item__link--social"><i class="fab fa-twitter"></i></a></li>
-                                <li class="aside__item--social"><a href="https://www.linkedin.com" class="aside__item__link--social"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li class="aside__item--social"><a href="https://www.instagram.com/" class="aside__item__link--social"><i class="fab fa-instagram"></i></a></li>
+                        <div class="social__info">
+                            <ul class="social__menu">
+                                <li class="social__item"><a href="https://www.facebook.com/" class="social__item__link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="social__item"><a href="https://twitter.com/" class="social__item__link"><i class="fab fa-twitter"></i></a></li>
+                                <li class="social__item"><a href="https://www.linkedin.com" class="social__item__link"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="social__item"><a href="https://www.instagram.com/" class="social__item__link"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                            <ul class="contact__info">
+                                <li class="contact__item item--email">info@email.com</li>
+                                <li class="contact__item item--telephone">123 - 456 - 7890</li>
+                                <li class="contact__item item--street">123 Queen Street West, Unit 10</li>
+                                <li class="contact__item item--city">Toronto, Ontario</li>
+                                <li class="contact__item item--postalcode">M5V2D5</li>
                             </ul>
                         </div>
-                        <p></p>
-
-                        </div>
                     </div>
-            </aside>
+                </aside>
+            </div>
         </div>
-
-
     </main>
     <!-- FOOTER--- -->
     <footer>
@@ -91,5 +97,4 @@
         </div>
     </footer>
 </body>
-
 </html>

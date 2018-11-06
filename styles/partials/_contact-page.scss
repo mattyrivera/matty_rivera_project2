@@ -1,0 +1,122 @@
+.contact__main {
+    padding: 100px 0;
+    background: $bckg-shade;
+}
+
+.contact {
+    width: 65%; 
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+// CONTACT ASIDE ----------------------
+
+.contact-form {
+    // border: 2px solid tomato;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.aside {
+    // border: 2px solid tomato;
+    width: 35%;
+    margin-right: 30px;
+}
+
+.container__aside {
+    display: flex;
+    background: #fff;
+    padding: 38px 30px;
+}
+
+.social__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social__item {
+    padding-right: 35px;
+    &__link {
+        color: $theme-color;
+        font-size: 2.5rem;
+    }
+}
+
+.contact__info {
+    list-style: none;
+    @include body-font;
+    padding: 0;
+    margin: 0;
+    .item--email {
+        padding: 15px 0;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+
+// CONTACT FORM -------------------------
+
+.contact__form--name-email {
+    display: flex;
+}
+
+.input__fill {
+    width: 50%;
+    margin-right: 20px;
+    border-style: none;
+    margin-bottom: 20px;
+    height: 60px;
+
+}
+.input__fill:last-child {
+    margin-right: 0;
+}
+
+.hidden__label:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.text-area {
+    resize: none;
+    border-style: none;
+    margin-bottom: 20px;
+}
+
+.input__fill::placeholder, .text-area::placeholder { 
+    color: $text-color;
+    opacity: 0.8; 
+    font-weight: 400i;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+#message {
+    padding: 40px 0 0 20px;
+    font-size: 2rem;
+}
+
+#name, #email {
+    padding-left: 20px;
+    font-size: 2rem;
+}
+
+.btn__form {
+    @include btn-links-font;
+    background: $accent-primary-color;
+    border-style: none;
+    padding: 10px 0;
+}
