@@ -35,20 +35,7 @@
     max-width: 500px;    
 }
 
-// .blog__container--image{
-//     position: relative;
-// }
 
-// .blog__container--image::before{
-//     content: '';
-//     width: 300px;
-//     height: 200px;
-//     top: 25px;
-//     right: 0;
-//     position: absolute;
-//     z-index: -5;
-//     background-color: black;
-// }
 
 .blog__container {
     width: 100%;
@@ -67,21 +54,26 @@
     width: 50%;
 }
 
-.blog__content:nth-of-type(odd){
-    padding-left: 10%;
+.blog__content:nth-of-type(even){
+    // padding-right: 10%;
     &:nth-of-type(even){
         padding-right: 10%;
     }
 }
 
+
+
 .blog__container--image {
     max-height: 320px;
 }
 
+// --------------------------------------------
+
 .blog__image--left {
     background: $accent-secondary-color;
     position: relative;
-    top: -25px;
+    top: -15px;
+    padding-left: 10%;
     .blog__image {
         position: relative;
         width: 100%;
@@ -93,30 +85,75 @@
 .blog__image--right {
     background: $theme-color;
     position: relative;
-    top: 25px;
+    top: 30px;
+    left: 30px;
     .blog__image {
         position: relative;
         bottom: 15px;
         right: 15px;
+
     }
 }
 
+// --------------------------------------------
+
 .blog__container--description {
-    padding-right: 101px;
-    padding-bottom: 40px;
-    padding-top: 10px;
+    padding: 10px 45px 40px 0;
 }
 
-.blog__container--description.blog--top {
-    padding-top: 60px;
-    padding-left: 101px;
-    padding-right: 10%;
+// .blog__container--description
+.blog--top {
+    padding: 60px 10% 0 50px;
 }
 .blog--bottom {
     text-align: right;
 }
 
-.paragraph--blog {
-    margin: 20px 0;
+.paragraph__blog--right {
+    padding-left: 20%;
 }
 
+@media (max-width: 768px){
+    .blog__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog__content{
+        width: 80%;
+    }
+    .blog--bottom{
+        text-align: inherit;
+        order: 3;
+        padding: 0;
+        p{
+            padding: 0;
+        }
+    }
+    .blog--top{
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .blog__image--right{
+        left: 0;
+        top: 0;
+        margin-bottom: 25px;
+        img.blog__image{
+            margin: 0 auto;
+            right: 0;
+        }
+    }
+    .blog__image--left{
+        padding: 0;
+        .blog__image{
+            margin: 0 auto;
+            right: 0;
+        }
+    }
+    .blog__content:nth-of-type(even){
+        &:nth-of-type(even){
+            padding-right: 0;
+        }
+    }
+    
+}

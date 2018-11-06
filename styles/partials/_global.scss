@@ -9,7 +9,7 @@ html {
     // max-width: 1024px;
     max-width: 1280px;
     width: 80%;
-    // border: 2px solid tomato;
+    border: 2px solid tomato;
     margin: 0 auto;
 }
 
@@ -17,24 +17,24 @@ html {
 
 
 .section__heading {
-    @include heading-font(3.4rem);
+    @include heading-font(4.2rem);
     margin: 0;
 }
 
 .section__heading--sub-heading {
-    @include heading-font(2.5rem);
+    @include heading-font(3.2rem);
     margin: 0;
 }
 
 .paragraph {
     @include body-font;
-    margin: 30px 0;
+    margin: 15px 0 25px 0;
 }
 
 .button {
     @include btn-links-font;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 10px 20px;
     background: $accent-primary-color;
     display: inline-block;
 }
