@@ -30,8 +30,32 @@ html {
     padding: 10px 20px;
     background: $accent-primary-color;
     display: inline-block;
+    &:hover{
+        transition: 0.5s;
+        background: $theme-color;
+        box-shadow: 7px 9px 24px -7px rgba(40, 94, 100, 0.6);
+    }
 }
 
 .section {
     padding: 100px 0;
+}
+
+// RESPONSIVE - MEDIA QUERIES -------------------------------------------
+
+@media (max-width: 768px) {
+    .section__heading {
+        @include heading-font(3.2rem);
+        margin: 0;
+    }
+
+    .section__heading--sub-heading {
+        @include heading-font(3rem);
+    }
+    .paragraph {
+        font-size: 1.6rem;
+    }
+    .button {
+        font-size: 1.8rem;
+    }
 }

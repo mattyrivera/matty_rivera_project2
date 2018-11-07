@@ -45,7 +45,7 @@
     }
 }
 
-// CONTACT PAGE STYLING--------------------------------------
+// CONTACT PAGE STYLING--------------------------------
 
 .title--contact {
     @include logo-font(8rem);
@@ -65,8 +65,7 @@
     justify-content: flex-end;
 }
 
-
-// CONTACT PAGE STYLING--------------------------------------
+// CONTACT PAGE STYLING-------------------------------
 
 .title--blog {
     @include logo-font(8rem);
@@ -87,20 +86,18 @@
 }
 
 // RESPONSIVE - MEDIA QUERIES -------------------------------------------
+
 @media (max-width: 1030px) {
     .header__content {
         padding-top: 55px;
     }
 }
 
-
-
 @media (max-width: 972px) {
     .header__content {
         padding-top: 85px;
     }
 }
-
 
 @media (max-width: 940px) {
     .header__title--logo {
@@ -113,10 +110,10 @@
         top: -20px;
         left: -30px
     }
-    .header__title{
+    .header__title {
         position: relative;
     }
-    .header__image--author{
+    .header__image--author {
         top: 30px;
     }
 }
@@ -127,42 +124,40 @@
     }
 }
 
-
 @media (max-width: 768px) {
-    .header__content{
+    .header__content {
         flex-direction: column;
         align-items: flex-start;
         padding-top: 0;
     }
-    .container__heading{
+    .container__heading {
         margin-bottom: 0;
         z-index: 3;
     }
-    .header__title--logo{
+    .header__title--logo {
         margin-top: 40px;
     }
-    .header__image--author{
+    .header__image--author {
         max-width: 350px;
         top: -60px;
         left: 100px;
     }
 }
 
-
 @media (max-width: 580px) {
-    .header__image--author{
+    .header__image--author {
         left: 0;
         top: -50px;
     }
-    .header__image{
+    .header__image {
         margin: 0;
     }
-    .header__content{
+    .header__content {
         align-items: center;
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .header__title--logo {
         font-size: 6rem;
         margin: 80px 0 0 0;

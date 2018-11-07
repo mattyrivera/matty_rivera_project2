@@ -38,6 +38,13 @@
     &--about {
         font-style: normal;
     }
+    &:hover {
+        transition: 0.5s;
+        background: 2px 2px rgba(246, 168, 35, 0.3);
+        padding: 2px 2px;
+        border-radius: 5px;
+        box-shadow: 7px 9px 8px -7px rgba(40, 94, 100, 0.6);
+    }
 }
 
 .blog__comment__container {
@@ -107,41 +114,60 @@
     display: block;
 }
 
-
-
-
-
-
-
+// RESPONSIVE - MEDIA QUERIES -------------------------------------------
 
 @media (max-width: 935px) {
+    .blog__main--container {
+        flex-direction: column;
+    }
+    .blog__about {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .aside__blog {
+        width: 100%;
+    }
+
+    .aside__about {
+        text-align: center;
+        .blog-page__image {
+            margin: 0 auto;
+        }
+    }
+
+    .aside__recent-posts {
+        text-align: center;
+    }
+
     .input__fill::placeholder, .text-area::placeholder { 
         font-size: 1.6rem;
     }
 }
 
-@media (max-width: 768px){
-    .blog__main--container{
-        flex-direction: column;
+@media (max-width: 768px) {
+    .blog__link {
+        font-size: 1.8rem;
     }
-    .blog__about{
+
+    .paragraph--blog {
+        font-size: 1.6rem;
+    }
+
+    .recent-posts__list {
+        font-size: 1.6rem;
+    }
+
+    .aside__blog {
         width: 100%;
-        margin-bottom: 50px;
     }
-    .aside__blog{
-        width: 100%;
-    }
-    .aside__about{
+    .aside__about {
         display: flex;
-        img{
+        .blog-page__image {
             align-self: center;
             margin-right: 20px;
         }
-        h3{
-            font-size: 2.4rem;
-        }
-        p{
-            font-size: 1.6rem;
+        .section__heading--sub-heading {
+            font-size: 3rem;
         }
     }
 }
@@ -165,20 +191,20 @@
 @media (max-width: 480px) {
     .aside__about{
         flex-direction: column;
-        img{
+        .blog-page--image {
             margin-right: 0;
         }
-        h3{
+        .section__heading--sub-heading {
             text-align: center;
         }
-        p{
+        .paragraph--about-sophie {
             text-align: center;
         }
     }
-    .blog__comment__container{
+    .blog__comment__container {
         flex-direction: column;
         text-align: center;
-        img{
+        .comment__image--user {
             margin-right: 0;
         }
     }

@@ -6,3 +6,11 @@ section.full-bleed__image {
     background-position: center;
     background-size: cover;
 }
+
+// RESPONSIVE - MEDIA QUERIES -------------------------------------------
+
+@media (max-width: 730px) {
+    section.full-bleed__image {
+        min-height: 50vh;
+    }
+}

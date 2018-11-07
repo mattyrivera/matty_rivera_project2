@@ -44,6 +44,10 @@
     &__link {
         color: $theme-color;
         font-size: 2.5rem;
+        &:hover {
+            transition: 0.5s;
+            color: $accent-primary-color;
+        }
     }
 }
 
@@ -118,34 +122,41 @@
     background: $accent-primary-color;
     border-style: none;
     padding: 10px 0;
+    &:hover {
+        transition: 0.5s;
+        background: $theme-color;
+        box-shadow: 7px 9px 24px -7px rgba(40, 94, 100, 0.6);
+    }
 }
 
+// RESPONSIVE - MEDIA QUERIES -------------------------------------------
 
-
-
-
-
-
-@media (max-width: 768px){
-    .contact__container{
+@media (max-width: 955px) {
+        .contact__container {
         flex-direction: column;
     }
-    .aside{
+    .aside {
         width: 100%;
         margin-top: 50px;
-        .container__aside{
+        .container__aside {
             justify-content: center;
             text-align: center;
         }
-        .social__menu{
+        .social__menu {
             justify-content: center;
         }
     }
-    .social__item:last-of-type{
+    .social__item:last-of-type {
         padding: 0;
     }
-    .contact{
+    .contact {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__info {
+        font-size: 1.6rem;
     }
 }
 

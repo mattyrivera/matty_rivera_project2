@@ -30,20 +30,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover {
+        transition: 0.5s;
+        color: $bckg-shade;
+        background: $accent-primary-color;
+    }
 }
 
 .button__sub-heading {
     text-decoration: none;
     color: $text-color;
     padding-left: 15px;
+    &:hover {
+        transition: 0.5s;
+        text-shadow: 2px 2px 4px  rgba(44, 44, 44, 1);
+    }
 }
 
 .paragraph--extra-links {
     margin: 15px;
 }
 
-
-
+// RESPONSIVE - MEDIA QUERIES -------------------------------------------
 
 @media (max-width: 768px) {
     .section__container--extra-links {

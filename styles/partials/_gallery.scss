@@ -16,8 +16,7 @@
     }
 }
 
-
-
+// RESPONSIVE - MEDIA QUERIES -------------------------------------------
 
 @media (max-width: 768px){
     .section__content--gallery{
@@ -25,6 +24,9 @@
         .wrapper{
             width: 100%;
         }
+    }
+    .container__gallery {
+        padding-bottom: 100px;
     }
     .gallery__item{
         width: 33.33%;
