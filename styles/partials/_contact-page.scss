@@ -71,7 +71,6 @@
     border-style: none;
     margin-bottom: 20px;
     height: 60px;
-
 }
 .input__fill:last-child {
     margin-right: 0;
@@ -119,4 +118,42 @@
     background: $accent-primary-color;
     border-style: none;
     padding: 10px 0;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .contact__container{
+        flex-direction: column;
+    }
+    .aside{
+        width: 100%;
+        margin-top: 50px;
+        .container__aside{
+            justify-content: center;
+            text-align: center;
+        }
+        .social__menu{
+            justify-content: center;
+        }
+    }
+    .social__item:last-of-type{
+        padding: 0;
+    }
+    .contact{
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .contact__form--name-email {
+        flex-direction: column;
+    }
+    .input__fill {
+        width: 100%;
+    }
 }

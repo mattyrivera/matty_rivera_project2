@@ -1,0 +1,189 @@
+.blog__main--container {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.blog__about {
+    width: 65%;
+}
+
+
+.blog__main {
+    background: $bckg-shade;
+    padding: 100px 0;
+}
+
+
+.blog-page__container {
+    background: #fff;
+    border-bottom: 6px solid $theme-color;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    padding: 38px 30px;
+}
+
+.blog__link {
+    font-style: italic;
+    color: $accent-text-color;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 32px;
+    &__user {
+        display: block;
+    }
+    &--about {
+        font-style: normal;
+    }
+}
+
+.blog__comment__container {
+    display: flex;
+    background: #fff;
+    padding: 38px 30px;
+    margin-bottom: 30px;
+    &--recent {
+        border-bottom: 6px solid $theme-color;
+    }
+}
+
+.comment__image--user {
+    margin-right: 20px;
+    width: 100px;
+}
+
+// ASIDE - BLOG -------------------------------------
+.aside__blog {
+    width: 35%;
+    margin-right: 30px;
+}
+
+.container__aside--about {
+    margin-bottom: 30px;
+}
+
+.aside__recent-posts {
+    background: #fff;
+    padding: 38px 30px;
+}
+
+.aside__about {
+    background: #fff;
+    padding: 38px 30px;
+    .section__heading--sub-heading {
+        margin-top: 25px;
+    }
+}
+
+.paragraph--blog {
+    @include body-font;
+    margin: 15px 0 0 0;
+}
+
+.paragraph--about-sophie {
+    margin: 15px 0 0 0;
+}
+
+.recent-posts__list {
+    @include body-font;
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;;
+}
+
+.list--bullet {
+    color: $theme-color;
+    font-size: 1.2rem;
+    padding-bottom: 6px;
+    margin:0 10px 0 10px;
+}
+
+.blog-page__image {
+    max-width: 387px;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 935px) {
+    .input__fill::placeholder, .text-area::placeholder { 
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px){
+    .blog__main--container{
+        flex-direction: column;
+    }
+    .blog__about{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .aside__blog{
+        width: 100%;
+    }
+    .aside__about{
+        display: flex;
+        img{
+            align-self: center;
+            margin-right: 20px;
+        }
+        h3{
+            font-size: 2.4rem;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .input__fill::placeholder, .text-area::placeholder { 
+        font-size: 1.6rem;
+    }
+
+    #message {
+        padding: 40px 0 0 10px;
+        font-size: 1.6rem;
+    }
+
+    #name, #email {
+        padding-left: 10px;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .aside__about{
+        flex-direction: column;
+        img{
+            margin-right: 0;
+        }
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .blog__comment__container{
+        flex-direction: column;
+        text-align: center;
+        img{
+            margin-right: 0;
+        }
+    }
+}
+
+
+
+

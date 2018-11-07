@@ -3,7 +3,13 @@
 }
 
 .paragraph--about {
-    // padding-right: 130px;
     padding-right: 18%;
 }
 
+
+
+@media (max-width: 768px){
+    .paragraph--about{
+        padding: 0;
+    }
+}

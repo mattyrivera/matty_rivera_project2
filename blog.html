@@ -34,6 +34,12 @@
             </ul>
         </div>
     </nav>
+    <nav class="nav__mobile">
+        <div class="wrapper nav__mobile--container">
+            <a class="nav__mobile--link nav__item__link--logo" href="index.html">Sophie</a>
+            <div class="nav__mobile--hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
     <!-- HEADER--- -->
     <header class="header__blog">
         <div class="blog--bckg-image">
@@ -45,8 +51,80 @@
         </div>
     </header>
     <!-- MAIN--- -->
-    <main>
-        
+    <main class="blog__main">
+        <div class="blog__main--container wrapper">
+            <div class="blog__about">
+                <section class="blog__section">
+                    <div class="blog-page__container">
+                        <div class="blog-post">
+                            <h2 class="section__heading">Why I Became a Blogger</h2>
+                            <p class="blog--date paragraph">Monday October 8th 2018 by <a href="index.html" class="blog__link">Sophie Barlow</a></p>
+                            <p class="paragraph--blog">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                            <p class="paragraph--blog">In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis antevenenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifendlacu.</p>
+                            <p class="paragraph--blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut egetimperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.</p>
+                            <p class="paragraph--blog">Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                            <p class="paragraph--blog">In imperdiet eros id lacus vestibulum vestibulum. Suspendisse feermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
+                            <p class="paragraph--blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie  luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec eli magna faucibus sem, in condimentum est augue tristique risus.</p>
+                        </div>
+                    </div>
+                    <div class="blog__comment__container">
+                        <div class="blog__comment--image">
+                            <img src="assets/blog-image-3.jpg" class="comment__image--user" alt="Comment post - photo of user">
+                        </div>
+                        <div class="comment__user">
+                            <a href="#" class="blog__link link__user">Tuesday October 9th 2018 by Jeremy</a>
+                            <p class="paragraph--blog">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Set sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                        </div>
+                    </div>
+                    <div class="blog__comment__container blog__comment__container--recent">
+                        <div class="blog__comment--image">
+                            <img src="assets/blog-image-4.jpg" class="comment__image--user" alt="Comment post - photo of user">
+                        </div>
+                        <div class="comment__user">
+                            <a href="#" class="blog__link link__user">Wednesday October 19th, 2018 by Julia</a>
+                            <p class="paragraph--blog">Donec viverra eleifend lacus, vitae ullamcorper metus. Set sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                        </div>
+                    </div>
+                    <div class="contact__form">
+                        <form action="Contact Form" method="post" name="Order Form" class="contact-form">
+                            <div class="contact__form--name-email">
+                                <label for="name" class="hidden__label">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Name" required class="input__fill fill--name">
+                        
+                                <label for="email" class="hidden__label">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="Email Address" required class="input__fill fill--email">
+                            </div>
+                        
+                            <label for="message" class="hidden__label">Write your message:</label>
+                            <textarea name="message" id="message" placeholder="Comment" cols="25" rows="15" class="text-area"></textarea>
+                            <input type="submit" value="post comment" class="btn__form">
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <aside class="aside__blog">
+                <div class="container__aside--about">
+                    <div class="aside__about">
+                        <img src="assets/blog-image-2.jpg" class="blog-page__image" alt="Photo of Sophie">
+                        <div class="aside__about--text">
+                            <h3 class="section__heading--sub-heading">About Sophie</h3>
+                            <p class="paragraph paragraph--about-sophie">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#" class="blog__link blog__link--about">Find out more.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__aside--about">
+                    <div class="aside__recent-posts">
+                        <h3 class="section__heading--sub-heading">Recent Posts</h3>
+                        <ul class="recent-posts__list">
+                            <li class="recent-posts__item"><i class="fas fa-circle list--bullet"></i>Donec facilisis tortor ut</li>
+                            <li class="recent-posts__item"><i class="fas fa-circle list--bullet"></i>Augue lacinia at viverra</li>
+                            <li class="recent-posts__item"><i class="fas fa-circle list--bullet"></i>Semper sed sapien metus</li>
+                            <li class="recent-posts__item"><i class="fas fa-circle list--bullet"></i>Scelerisque nec pharetra id</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </main>
     <!-- FOOTER--- -->
     <footer>

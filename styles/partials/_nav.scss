@@ -16,8 +16,6 @@
     }
 }
 
-
-
 .nav__item__link:hover {
     color: $bckg-shade;
 }
@@ -28,4 +26,36 @@
     justify-content: center;
     margin: 0;
     padding: 15px 0;
+}
+
+.nav__mobile{
+    display: none;
+    background-color: $theme-color;
+    padding: 10px 0;
+    &--container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &--link{
+        text-decoration: none;
+        &:hover{
+            color: #fff;
+        }
+    }
+    &--hamburger{
+        @include nav-font;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .nav{
+        display: none;
+    }
+    .nav__mobile{
+        display: block;
+    }
 }

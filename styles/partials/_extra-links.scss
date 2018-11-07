@@ -41,3 +41,18 @@
 .paragraph--extra-links {
     margin: 15px;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .section__container--extra-links {
+        flex-direction: column;
+        .container__extra-links {
+            display:flex;
+            width: 100%;
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+    }
+}

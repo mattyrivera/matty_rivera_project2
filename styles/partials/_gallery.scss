@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     &__item {
-        width: calc(33.33% - (30px/3);
+        width: calc(33.33% - (30px/3));
         margin-right: 30px;
         &__img {
             display: block;
@@ -17,4 +17,18 @@
 }
 
 
+
+
+@media (max-width: 768px){
+    .section__content--gallery{
+        padding: 0;
+        .wrapper{
+            width: 100%;
+        }
+    }
+    .gallery__item{
+        width: 33.33%;
+        margin-right: 0;
+    }
+}
 

@@ -6,40 +6,12 @@
     background: $theme-color;
 }
 
-// .nav__item {
-//     list-style: none;
-//     &__link {
-//         text-decoration: none;
-//         @include nav-font;
-//         padding: 10px 10px;
-//         margin: 0 10px;
-//         // border: 2px solid tomato;
-//         &--logo {
-//             @include logo-font(3rem);
-//         }
-//     }
-// }
-
-// .nav__item__link:hover {
-//     color: $bckg-shade;
-// }
-
-// .nav__links {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin: 0;
-//     padding: 15px 0;
-// }
-
-
 .header__content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-basis: 1;
     padding-top:30px;
-    // margin-top: 30px;
 }
 
 .container__heading {
@@ -47,9 +19,8 @@
     margin: 0 0 95px 35px;
 }
 
-// font size supposed to be 8rem ---ratio not accurate
 .header__title--logo {
-    @include logo-font(8rem);
+    @include logo-font(11.5rem);
     margin: 0;
 }
 
@@ -113,4 +84,93 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+// RESPONSIVE - MEDIA QUERIES -------------------------------------------
+@media (max-width: 1030px) {
+    .header__content {
+        padding-top: 55px;
+    }
+}
+
+
+
+@media (max-width: 972px) {
+    .header__content {
+        padding-top: 85px;
+    }
+}
+
+
+@media (max-width: 940px) {
+    .header__title--logo {
+        font-size: 8.5rem;
+        margin: 80px 0 0 0;
+    }
+    
+    .header__title--image {
+        max-width: 112px;
+        top: -20px;
+        left: -30px
+    }
+    .header__title{
+        position: relative;
+    }
+    .header__image--author{
+        top: 30px;
+    }
+}
+
+@media (max-width: 880px) {
+    .header__content {
+        padding-top: 60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header__content{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0;
+    }
+    .container__heading{
+        margin-bottom: 0;
+        z-index: 3;
+    }
+    .header__title--logo{
+        margin-top: 40px;
+    }
+    .header__image--author{
+        max-width: 350px;
+        top: -60px;
+        left: 100px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .header__image--author{
+        left: 0;
+        top: -50px;
+    }
+    .header__image{
+        margin: 0;
+    }
+    .header__content{
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px){
+    .header__title--logo {
+        font-size: 6rem;
+        margin: 80px 0 0 0;
+    }
+    
+    .header__title--image {
+        max-width: 112px;
+        top: -20px;
+        left: -30px
+    }
 }
